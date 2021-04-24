@@ -82,7 +82,7 @@
                 true
                 </addClasspath>
                 <mainClass>
-                  edu.pingpong.mollapInterceptingFilter
+                  edu.pingpong.mollapInterceptingFilter.app
                 </mainClass>
             </manifest>
         <manifestEntries>
