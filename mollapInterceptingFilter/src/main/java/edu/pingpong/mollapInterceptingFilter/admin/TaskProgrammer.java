@@ -19,8 +19,8 @@ public class TaskProgrammer {
     }
 
     // Setter
-    public void setTask(Filter filter) {
-        tasks.addTask(filter);
+    public void setTask(Filter task) {
+        tasks.addTask(task);
     }
 
     // Execute

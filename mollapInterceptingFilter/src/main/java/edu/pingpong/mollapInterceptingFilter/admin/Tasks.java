@@ -14,6 +14,11 @@ public class Tasks {
     // Constructor
     public Tasks() {}
 
+    // Setter
+    public void setTask(Target target) {
+        this.target = target;
+    }
+
     // Getters
     public List<Filter> getTasks() {
         return this.taskList;
@@ -24,17 +29,15 @@ public class Tasks {
     }
 
     // Add an element to the list
-    public void addTask(Filter filter) {
-        this.taskList.add(filter);
+    public void addTask(Filter task) {
+        this.taskList.add(task);
     }
 
     // Execute list
     public void execute(String request) {
-        this.taskList.forEach(t -> t.execute(request));
-    }
-    
-    // Setter
-    public void setTask(Target target) {
-        this.target = target;
+        getTasks().forEach(t -> t.execute(request));
+        if (target != null) {
+            getTarget().execute(request);
+        }
     }
 }
