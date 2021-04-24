@@ -23,7 +23,8 @@ public class TaskProgrammer {
         tasks.addTask(filter);
     }
 
-    public void execute(String request) {
+    // Execute
+    public void executeTasks(String request) {
         this.tasks.execute(request);
     }
 }

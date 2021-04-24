@@ -15,7 +15,7 @@ public class Tasks {
     public Tasks() {}
 
     // Getters
-    public List<Filter> getTasksList() {
+    public List<Filter> getTasks() {
         return this.taskList;
     }
 
