@@ -2,6 +2,8 @@ package edu.pingpong.mollapInterceptingFilter.app;
 
 import edu.pingpong.mollapInterceptingFilter.admin.TaskProgrammer;
 import edu.pingpong.mollapInterceptingFilter.target.Vehicle;
+import edu.pingpong.mollapInterceptingFilter.filter.Authentication;
+import edu.pingpong.mollapInterceptingFilter.filter.Authoritzation;
 // import intercepting.clients.Mollapp;
 // import intercepting.filtres.Authoritzation;
 // import intercepting.targets.Vehicle;
@@ -11,19 +13,19 @@ public final class App {
     public static void main(String[] args) {
 
         /**
-         * Configuració del programador de tasques
-         * del sistema amb el tipus de target triat:
-         * des de vehicles a qualsevol cosa que admiteix
-         * la recepció d'un missatge.
-         */
+         * Configure the Task Programmer of the system 
+         * with the selected Target from Vehicles to
+         * anything that could accept the reception of
+         * the message
+        */
         TaskProgrammer taskProgrammer = new TaskProgrammer(new Vehicle());
 
-        // /**
-        //  * Afegir al sistema les tasques que volem que el sistema
-        //  * executi al rebre la petició del client.
-        //  */
-        // taskProgrammer.setTask(new Authentication());
-        // taskProgrammer.setTask(new Authoritzation());
+        /**
+         * Add to the system the tasks that the system has to
+         * execute when gets a request from the client
+        */
+        taskProgrammer.setTask(new Authentication());
+        taskProgrammer.setTask(new Authoritzation());
 
         // /**
         //  * Configuració de l'app client per a que
