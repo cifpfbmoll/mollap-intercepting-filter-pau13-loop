@@ -4,10 +4,7 @@ import edu.pingpong.mollapInterceptingFilter.admin.TaskProgrammer;
 import edu.pingpong.mollapInterceptingFilter.target.Vehicle;
 import edu.pingpong.mollapInterceptingFilter.filter.Authentication;
 import edu.pingpong.mollapInterceptingFilter.filter.Authoritzation;
-// import intercepting.clients.Mollapp;
-// import intercepting.filtres.Authoritzation;
-// import intercepting.targets.Vehicle;
-// import intercepting.filtres.Autentication;
+import edu.pingpong.mollapInterceptingFilter.client.Mollapp;
 
 public final class App {
     public static void main(String[] args) {
@@ -27,13 +24,13 @@ public final class App {
         taskProgrammer.setTask(new Authentication());
         taskProgrammer.setTask(new Authoritzation());
 
-        // /**
-        //  * Configuració de l'app client per a que
-        //  * executi les tasques programades i
-        //  * enviï el misstage al sistema.
-        //  */
-        // Mollapp mollapp = new Mollapp();
-        // mollapp.setTaskProgrammer(taskProgrammer);
-        // mollapp.sendPetition("Francesc");
+        /**
+         * Configure the client app to execute the 
+         * programmed tasks and to send a message 
+         * to the system
+        */
+        Mollapp mollapp = new Mollapp();
+        mollapp.setTaskProgrammer(taskProgrammer);
+        mollapp.sendRequest("Francesc");
     }
 }
