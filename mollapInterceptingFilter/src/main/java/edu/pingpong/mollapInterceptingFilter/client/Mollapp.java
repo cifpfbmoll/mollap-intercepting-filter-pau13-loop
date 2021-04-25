@@ -1,8 +1,6 @@
 package edu.pingpong.mollapInterceptingFilter.client;
 
 import edu.pingpong.mollapInterceptingFilter.admin.TaskProgrammer;
-// Import interface Client
-import edu.pingpong.mollapInterceptingFilter.client.Client;
 
 public class Mollapp implements Client{
 
@@ -11,10 +9,12 @@ public class Mollapp implements Client{
     // Constructor
     public Mollapp() {}
 
+    @Override
     public void setTaskProgrammer(TaskProgrammer taskProgrammer) {
         this.taskProgrammer = taskProgrammer;
     }
 
+    @Override
     public void sendRequest(String request) {
         this.taskProgrammer.executeTasks(request);
     }
