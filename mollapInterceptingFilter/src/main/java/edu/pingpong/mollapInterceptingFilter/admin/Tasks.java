@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import edu.pingpong.mollapInterceptingFilter.filter.Filter;
-import edu.pingpong.mollapInterceptingFilter.target.Target;
+import edu.pingpong.mollapInterceptingFilter.targget.Target;
 
 public class Tasks {
 
