@@ -1,7 +1,7 @@
 package edu.pingpong.mollapInterceptingFilter.admin;
 
 import edu.pingpong.mollapInterceptingFilter.filter.Filter;
-import edu.pingpong.mollapInterceptingFilter.target.Target;
+import edu.pingpong.mollapInterceptingFilter.targget.Target;
 
 public class TaskProgrammer {
 

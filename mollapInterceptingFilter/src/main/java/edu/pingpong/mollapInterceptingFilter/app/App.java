@@ -1,7 +1,7 @@
 package edu.pingpong.mollapInterceptingFilter.app;
 
 import edu.pingpong.mollapInterceptingFilter.admin.TaskProgrammer;
-import edu.pingpong.mollapInterceptingFilter.target.Vehicle;
+import edu.pingpong.mollapInterceptingFilter.targget.Vehicle;
 import edu.pingpong.mollapInterceptingFilter.filter.Authentication;
 import edu.pingpong.mollapInterceptingFilter.filter.Authoritzation;
 import edu.pingpong.mollapInterceptingFilter.client.Mollapp;
