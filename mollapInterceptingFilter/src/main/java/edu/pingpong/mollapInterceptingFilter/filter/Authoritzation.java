@@ -6,6 +6,6 @@ public class Authoritzation implements Filter{
 
     @Override
     public void execute(String request) {
-        System.out.print("Authoritzation request OK for " + request);
+        System.out.print("\n\tAuthoritzation request OK for " + request);
     }
 }
